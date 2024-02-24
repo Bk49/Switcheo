@@ -1,0 +1,15 @@
+export const tokenChoices = [
+    { id: 0, value: "", text: "Please Select a currency to begin swapping" },
+    { id: 1, value: "ADA", text: "ADA" },
+    { id: 2, value: "BCH", text: "BCH" },
+    { id: 3, value: "BNB", text: "BNB" },
+    { id: 4, value: "BTC", text: "BTC" },
+    { id: 5, value: "DOGE", text: "DOGE" },
+    { id: 6, value: "DOT", text: "DOT" },
+    { id: 7, value: "ETH", text: "ETH" },
+    { id: 8, value: "LINK", text: "LINK" },
+    { id: 9, value: "LTC", text: "LTC" },
+    { id: 10, value: "USDT", text: "USDT" },
+    { id: 11, value: "XLM", text: "XLM" },
+    { id: 12, value: "XRP", text: "XRP" },
+];

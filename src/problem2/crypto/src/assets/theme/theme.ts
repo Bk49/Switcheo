@@ -1,14 +1,14 @@
 import { createTheme } from "@mui/material/styles";
 import { CSSProperties } from "@mui/material/styles/createTypography";
-import Anta from "../fonts/Anta-Regular.ttf";
-import KodeMono from "../fonts/KodeMono-Regular.ttf";
+import Anta from "../fonts/Anta-Regular.woff2";
+import KodeMono from "../fonts/KodeMono-Regular.woff2";
 
 /**
  * Declares common CSS Properties for all 3 headings
  * @returns {CSSProperties}
  */
 const headingPalette: CSSProperties = {
-    fontFamily: "BebasNueue",
+    fontFamily: "Anta",
     fontWeight: "400",
     textTransform: "uppercase",
     textAlign: "left",
@@ -57,7 +57,7 @@ const defaultTheme = createTheme({
     },
 
     typography: {
-        fontFamily: ["Anta", "Kodemono"].join(","),
+        fontFamily: ["Anta", "KodeMono"].join(","),
 
         allVariants: {
             textTransform: "none",
@@ -102,7 +102,6 @@ const defaultTheme = createTheme({
 
         button: {
             fontFamily: "Anta",
-            fontWeight: "bold",
             fontSize: "0.9375rem",
             [theme.breakpoints.down("md")]: {
                 fontSize: "0.8rem",
@@ -175,17 +174,16 @@ const defaultTheme = createTheme({
              * The following styles overrides declares the custom fonts used in the application
              */
             styleOverrides: `
-               
                 @font-face {
                     font-family: 'Anta';
-                    src: url(${Anta}) format('ttf');
+                    src: local('Anta'), local('Anta-Regular'), url(${Anta}) format('woff2');
                     font-weight: normal;
                     font-style: normal;
                 }
                 
                 @font-face {
                     font-family: 'KodeMono';
-                    src: url(${KodeMono}) format('woff2');
+                    src: local('KodeMono'), local('KodeMono-Regular'), url(${KodeMono}) format('woff2');
                     font-weight: normal;
                     font-style: normal;
                 }

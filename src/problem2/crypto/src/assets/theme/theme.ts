@@ -112,7 +112,7 @@ const defaultTheme = createTheme({
         },
 
         body1: {
-            fontFamily: "Anta",
+            fontFamily: "Kodemono",
             fontSize: "1.25rem",
             [theme.breakpoints.down("md")]: {
                 fontSize: "1.05rem",
@@ -123,7 +123,7 @@ const defaultTheme = createTheme({
         },
 
         body2: {
-            fontFamily: "Anta",
+            fontFamily: "Kodemono",
             fontSize: "0.9375rem",
             [theme.breakpoints.down("md")]: {
                 fontSize: "0.8rem",
